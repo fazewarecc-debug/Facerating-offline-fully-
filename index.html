@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Face Rating AI - Offline</title>
+<link rel="stylesheet" href="style.css">
+<script src="js/tf.min.js"></script>
+<script src="js/face-landmarks-detection.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1>Face Rating AI - Offline</h1>
+  <div id="status">Загрузка модели...</div>
+  <input type="file" id="imageInput" accept="image/*">
+  <button id="analyzeBtn">Analyze</button>
 
+  <div id="result">
+    <div id="score">Score: 0 / 10</div>
+    <div id="category">Category: -</div>
+    <div id="progressBarContainer"><div id="progressBar"></div></div>
+  </div>
+
+  <canvas id="canvas"></canvas>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
